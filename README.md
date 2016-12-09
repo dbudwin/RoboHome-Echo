@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/dbudwin/RoboHome-Echo.svg?branch=master)](https://travis-ci.org/dbudwin/RoboHome-Echo)
+[![Code Climate](https://codeclimate.com/github/dbudwin/RoboHome-Echo/badges/gpa.svg)](https://codeclimate.com/github/dbudwin/RoboHome-Echo)
+
 #RoboHome-Echo
 
 ##What Is RoboHome-Echo?
