@@ -1,0 +1,24 @@
+{
+  "name": "RoboHome-Echo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "robohome.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbudwin/RoboHome-Echo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbudwin/RoboHome-Echo/issues"
+  },
+  "homepage": "https://github.com/dbudwin/RoboHome-Echo#readme",
+  "dependencies": {
+    "https": "^1.0.0",
+    "querystring": "^0.2.0"
+  }
+}
