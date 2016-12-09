@@ -1,0 +1,24 @@
+language:
+  node_js
+
+node_js:
+  - "4.3"
+
+branches:
+  only:
+    - master
+
+addons:
+  code_climate:
+    repo_token: $CODECLIMATE_REPO_TOKEN
+
+install:
+  - npm install
+
+notifications:
+  slack:
+    rooms:
+      secure:
+        S3juTAgTPRSWehCM2IpVXVnVN8pPqLY3CAN0hjRSEw871IH/lLOnSMUN9jN5VGL2+d9AD+7rN2zgJHKfUb5jC3QFjcgfoZJUaziTmOpO/vjZQiD7Npc25AuT7v3tkA3Rvv9i70IsIXoKbhAdFlU8P60KgiKUI+OzgTK8dePPNc5OzVGJQMVh2VtQ66yhVaxsfspHMaDFanFKL3fdBhah3Ia2CausK6QBpQAdKKP2Gi1zkRMEASMy10DX6d5wF/1YFXWX/R0nXBsZXjD0oBcMHveKi8B8EUb5S1sTBk1ld6/UhG0/rv3+W0WU+lcQckCNQw/UZiRnn3IECMNF/70LcRNAGihldg8uOMXl1MOcyc1eFri4fGc5HbNBRcNtUwO8AGAR9xE2f0hqY+KTLSOqkTDgg/Ig69DqISnKwyBpSw3k58Usr0i8uZGvjjEW70aUwrn/vRdEfOqYCzk4xS4akbOvcA20m8uezmGyowDPGziGHFGC+8XHcCyVShggKB4AVS6BC0ENEDxOUW/aLIDUdMJrCPaxVVegKcjpDnlQPPBUxyltIg64N4XxfFsln0axCjcw2B33AWFAJH+WVORO12I5ICNYvvl+sqAT/kSiPxVHvISHV0PERlVm1xy8MbpyJgNpvvIQxLpYRtt7As8KKFxy7ZQ6iT64YJLWyLNVwsM=
+  email:
+    false
