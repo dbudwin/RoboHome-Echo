@@ -1,0 +1,16 @@
+{
+  "name": "RoboHome-Echo",
+  "version": "1.0.0",
+  "dependencies": {
+    "https": {
+      "version": "1.0.0",
+      "from": "https@latest",
+      "resolved": "https://registry.npmjs.org/https/-/https-1.0.0.tgz"
+    },
+    "querystring": {
+      "version": "0.2.0",
+      "from": "querystring@latest",
+      "resolved": "https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz"
+    }
+  }
+}
