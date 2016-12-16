@@ -21,7 +21,7 @@ This repo supports the principles of [Bob Martin's Clean Code](http://www.goodre
 
 ###Notes :notebook:
 
-- Update `REMOTE_CLOUD_HOSTNAME` and `REMOTE_CLOUD_BASE_PATH` to point to locations on your server.
+- Update `ROBOHOME_WEB_HOSTNAME` and `ROBOHOME_WEB_API_PATH` to point to locations on your server.
 
 
 *This is a new project and will be changing rapidly, more details will be provided when entering a beta state*
