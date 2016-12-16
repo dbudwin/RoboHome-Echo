@@ -1,0 +1,9 @@
+{
+    "header": {
+        "messageId": "messageId",
+        "name": "TurnOnConfirmation",
+        "namespace": "Alexa.ConnectedHome.Control",
+        "payloadVersion": "2"
+    },
+    "payload": {}
+}
