@@ -1,8 +1,7 @@
 var https = require("https");
 var querystring = require("querystring");
 
-var ROBOHOME_WEB_HOSTNAME = "";
-var ROBOHOME_WEB_API_PATH = "/RoboHome/api/devices";
+var ROBOHOME_WEB_HOSTNAME = "robohome.xyz";
 
 const DISCOVERY = "Alexa.ConnectedHome.Discovery";
 const CONTROL = "Alexa.ConnectedHome.Control";
@@ -33,7 +32,7 @@ function handleDiscovery(event, context) {
     log("Message ID", messageId);
     log("Access Token", accessToken);
 
-    createApiEndpointRequest("devices", "", messageId, accessToken, context);
+    createApiEndpointRequest("/api/devices", "GET", "", messageId, accessToken, context);
 }
 
 function handleControl(event, context) {
@@ -53,10 +52,10 @@ function handleControl(event, context) {
 
     if (event.header.namespace === CONTROL) {
         if (requestName === "TurnOnRequest") {
-            createApiEndpointRequest("turnon", postData, messageId, accessToken, context);
+            createApiEndpointRequest("/api/devices/turnon", "POST", postData, messageId, accessToken, context);
         }
         else if (requestName === "TurnOffRequest") {
-            createApiEndpointRequest("turnoff", postData, messageId, accessToken, context);
+            createApiEndpointRequest("/api/devices/turnoff", "POST", postData, messageId, accessToken, context);
         }
     }
     else {
@@ -64,12 +63,12 @@ function handleControl(event, context) {
     }
 }
 
-function createApiEndpointRequest(endpoint, postData, messageId, accessToken, context) {
+function createApiEndpointRequest(endpoint, verb, postData, messageId, accessToken, context) {
     var options = {
         hostname: ROBOHOME_WEB_HOSTNAME,
         port: 443,
-        path: ROBOHOME_WEB_API_PATH + "/" + endpoint,
-        method: "POST",
+        path: endpoint,
+        method: verb,
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Bearer " + accessToken,
