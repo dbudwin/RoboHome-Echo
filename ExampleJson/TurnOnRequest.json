@@ -1,0 +1,15 @@
+{
+    "header": {
+        "messageId": "messageId",
+        "name": "TurnOnRequest",
+        "namespace": "Alexa.ConnectedHome.Control",
+        "payloadVersion": "2"
+    },
+    "payload": {
+        "accessToken": "enterAccessToken",
+        "appliance": {
+            "additionalApplianceDetails": {},
+            "applianceId": "1"
+        }
+    }
+}

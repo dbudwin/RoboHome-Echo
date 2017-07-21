@@ -1,0 +1,40 @@
+{
+    "header": {
+        "messageId": "messageId",
+        "name": "DiscoverAppliancesResponse",
+        "namespace": "Alexa.ConnectedHome.Discovery",
+        "payloadVersion": "2"
+    },
+    "payload": {
+        "discoveredAppliances": [
+            {
+                "actions": [
+                    "turnOn",
+                    "turnOff"
+                ],
+                "additionalApplianceDetails": {},
+                "applianceId": 1,
+                "friendlyName": "Light 1",
+                "friendlyDescription": "Light upstairs",
+                "isReachable": true,
+                "manufacturerName": "N/A",
+                "modelName": "N/A",
+                "version": "N/A"
+            },
+            {
+                "actions": [
+                    "turnOn",
+                    "turnOff"
+                ],
+                "additionalApplianceDetails": {},
+                "applianceId": 2,
+                "friendlyName": "Light 2",
+                "friendlyDescription": "Light downstairs",
+                "isReachable": true,
+                "manufacturerName": "N/A",
+                "modelName": "N/A",
+                "version": "N/A"
+            }
+        ]
+    }
+}
