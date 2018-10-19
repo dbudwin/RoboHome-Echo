@@ -1,7 +1,7 @@
 {
-  "name": "RoboHome-Echo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "robohome-echo",
+  "version": "2.0.0",
+  "description": "[![Build Status](https://travis-ci.org/dbudwin/RoboHome-Echo.svg?branch=master)](https://travis-ci.org/dbudwin/RoboHome-Echo) [![Code Climate](https://codeclimate.com/github/dbudwin/RoboHome-Echo/badges/gpa.svg)](https://codeclimate.com/github/dbudwin/RoboHome-Echo)",
   "main": "robohome.js",
   "directories": {
     "test": "tests"
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/dbudwin/RoboHome-Echo.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Drew Budwin",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/dbudwin/RoboHome-Echo/issues"
   },
@@ -20,5 +20,11 @@
   "dependencies": {
     "https": "^1.0.0",
     "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "lambda-local": "^1.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
