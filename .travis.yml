@@ -1,16 +1,18 @@
-language:
-  node_js
+language: node_js
+
+script: true
 
 node_js:
-  - "4.3"
-
-branches:
-  only:
-    - master
+  - 6.10
+  - 8.10
 
 addons:
   code_climate:
     repo_token: $CODECLIMATE_REPO_TOKEN
+
+branches:
+  only:
+    - master
 
 install:
   - npm install

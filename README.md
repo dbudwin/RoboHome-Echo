@@ -5,11 +5,11 @@
 
 ## What Is RoboHome-Echo?
 
-This repo is one of a few repos that make up the whole project.  RoboHome-Echo is the codebase that represents the Amazon Echo Smart Home Skill of the RoboHome project.  It is a Node.js application that can discover and control devices added as part of the [RoboHome-Web](https://github.com/dbudwin/RoboHome-Web) project.
+This repo is one of a few repos that make up the whole project.  RoboHome-Echo is the codebase that represents the [Amazon Echo Smart Home Skill AWS Lambda](https://aws.amazon.com/lambda/) of the RoboHome project.  It is a Node.js application that calls the [RoboHome-Web](https://github.com/dbudwin/RoboHome-Web) API to return JSON responses to the AWS Lambda that can perform actions like discovering devices added in the RoboHome-Web application or controlling those same devices.
 
 ## What Is the RoboHome Project?
 
-RoboHome is a SaaS tool that also integrates with Amazon's Echo to enable control of semi-connected devices (think IR, and RF) in your house over wifi! This is done using an MQTT pub-sub network to send messages between the website or Echo to a microcontroller like the NodeMCU which has various transmitters hooked up to it (like IR and RF transmitters) to send signals to these devices. This can be used to control RF outlets with lights plugged into them, or to turn on your TV and change channels for instance.
+RoboHome is a SaaS tool that also integrates with Amazon's Echo to enable control of semi-connected devices (think IR, and RF) in your house over wifi! This is done using an MQTT pub-sub network to send messages between the website or Echo to a microcontroller like the ESP8266 which has various transmitters hooked up to it (like IR and RF transmitters) to send signals to these devices. This can be used to control RF outlets with lights plugged into them, or to turn on your TV and change channels for instance.
 
 ## Contributing
 
@@ -21,8 +21,7 @@ This repo supports the principles of [Bob Martin's Clean Code](http://www.goodre
 
 ### Notes :notebook:
 
-- Update `ROBOHOME_WEB_HOSTNAME` to point to locations on your server.
-
+- Update `ROBOHOME_WEB_HOSTNAME` to point to URL of the RoboHome-Web application.
+- Update `ROBOHOME_WEB_PORT` to point to port serving the RoboHome-Web API.
 
 *This is a new project and will be changing rapidly, more details will be provided when entering a beta state*
-
